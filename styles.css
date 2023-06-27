@@ -26,3 +26,14 @@ body{
   marquee{
     color:red;
   }
+  #blink_me {
+    animation: blinker 1s linear infinite;
+    float: left;
+    color:blueviolet;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }

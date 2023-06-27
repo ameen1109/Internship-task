@@ -19,6 +19,20 @@ function displayCost(val){
         document.getElementById("cost4").innerHTML="Starts at Rs:400"
     }
 }
+function displayCost2(val){
+    if(val==1){
+        document.getElementById("cost21").innerHTML="Starts at Rs:500"
+    }
+     if(val==2){
+        document.getElementById("cost22").innerHTML="Starts at Rs:200"
+    }
+    if(val==3){
+        document.getElementById("cost23").innerHTML="Starts at Rs:800"
+    }
+    if(val==4){
+        document.getElementById("cost24").innerHTML="Starts at Rs:400"
+    }
+}
 </script>
 </head>
 <body>
@@ -41,7 +55,7 @@ function displayCost(val){
     <th width="20%">Groceries</th></tr>
 </table><br>
 <b><marquee>Flat 50% off </style> on popular clothing brands</marquee><b><br>
-<h2>Clothing</h2><hr>
+<h2>Clothing </h2>&nbsp;<div id="blink_me">(Click on the image to view prices)</div><hr>
 <div class="imgtext">
 <img src="shirt.jpg" class="imgtext"width="200" height="200" alt="Shirts" onclick="displayCost(1)">
 <p>Casual Shirts</p>
@@ -66,22 +80,26 @@ function displayCost(val){
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div>
-   <h2 id="electronic">Electronics</h2><hr>
+   <h2 id="electronic">Electronics</h2>&nbsp;<div id="blink_me">(Click on the image to view prices)</div><hr>
 <div class="imgtext">
-<img src="earphone.jpg"alt="Earbuds" class="imgtext"width="200" height="200" >
+<img src="earphone.jpg"alt="Earbuds" class="imgtext"width="200" height="200" onclick="displayCost2(1)">
 <p>Earbuds</p>
+<p id="cost21"></p>
 </div>
 <div class="imgtext">
-<img src="watches.jpg" alt="Smart Watches" class="imgtext"width="200" height="200" >
+<img src="watches.jpg" alt="Smart Watches" class="imgtext"width="200" height="200" onclick="displayCost2(2)" >
 <p>Smart Watches</p>
+<p id="cost22"></p>
 </div>
 <div class="imgtext">
-<img src="Memcard.jpg" alt="Memory cards" class="imgtext" width="200" height="200" >
+<img src="Memcard.jpg" alt="Memory cards" class="imgtext" width="200" height="200" onclick="displayCost2(3)">
 <p>Memory cards</p>
+<p id="cost23"></p>
 </div> 
 <div class="imgtext">
-<img src="accessories.jpg" alt="Computer Accessories" class="imgtext" width="200" height="200" >
+<img src="accessories.jpg" alt="Computer Accessories" class="imgtext" width="200" height="200" onclick="displayCost2(4)">
 <p>Computer Accessories</p>
+<p id="cost24"></p>
 </div>
   
 </div>
