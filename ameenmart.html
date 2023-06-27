@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Ameen Mart  </title>
+<link rel="stylesheet" href="styles.css"/>
+<script type="text/javascript">
+function displayCost(val){
+    if(val==1){
+        document.getElementById("cost1").innerHTML="Starts at Rs:500"
+    }
+     if(val==2){
+        document.getElementById("cost2").innerHTML="Starts at Rs:200"
+    }
+    if(val==3){
+        document.getElementById("cost3").innerHTML="Starts at Rs:800"
+    }
+    if(val==4){
+        document.getElementById("cost4").innerHTML="Starts at Rs:400"
+    }
+}
+</script>
+</head>
+<body>
+<table class="table1">
+<tr>
+<td ><font style= "font-style: sans-serif"; color= "blue"><h1>Ameen <font color="black">Mart</h1></td>
+<th> <font style="font-style: sans-serif"; color="blue"></Font> Search <input type ="text" placeholder= "Search for products" </th>
+<th align="right"> Trending products</th>
+<th> Profile</th>
+<th> Your Orders</th>
+<th> Cart</th>
+<th align="left"> Login/signup</th>
+</table>
+<table id="table2" border=0 width=100% height= 10 bgcolor=" skyblue">
+    <tr></tr><colspan align="center"><h2>Categories</h2></colspan>
+    <th width="20%"> Today's Deals</th>
+    <th width="20%"> Clothing </th>
+    <th width="20%"><a id="link" style="text-decoration:none;" href="#electronic" </a>Electronics</th>
+    <th width="20%"> Footwear</th>
+    <th width="20%">Groceries</th></tr>
+</table><br>
+<b><marquee>Flat 50% off </style> on popular clothing brands</marquee><b><br>
+<h2>Clothing</h2><hr>
+<div class="imgtext">
+<img src="shirt.jpg" class="imgtext"width="200" height="200" onclick="displayCost(1)">
+<p>Casual Shirts</p>
+<p id="cost1"></p>
+</div>
+<div class="imgtext">
+<img src="tshirt.jpg" class="imgtext"width="200" height="200"  onclick="displayCost(2)">
+<p>T-Shirts</p>
+<p id="cost2"></p>
+</div>
+
+<div class="imgtext">
+<img src="pant.jpg" class="imgtext" width="200" height="200" onclick="displayCost(3)">
+<p>Pants</p>
+<p id="cost3"></p>
+</div>
+
+<div class="imgtext">
+<img src="tpant2.jpg" class="imgtext" width="200" height="200" onclick="displayCost(4)">
+<p>Track Pants</p>
+<p id="cost4"></p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div>
+   <h2 id="electronic">Electronics</h2><hr>
+<div class="imgtext">
+<img src="earphone.jpg" class="imgtext"width="200" height="200" >
+<p>Earbuds</p>
+</div>
+<div class="imgtext">
+<img src="watches.jpg" class="imgtext"width="200" height="200" >
+<p>Smart Watches</p>
+</div>
+<div class="imgtext">
+<img src="memcard.jpg" class="imgtext" width="200" height="200" >
+<p>Memory cards</p>
+</div> 
+<div class="imgtext">
+<img src="accessories.jpg" class="imgtext" width="200" height="200" >
+<p>Computer Accessories</p>
+</div>
+  
+</div>
+
+<footer id="foot" align="center"><p>&copy; 2023 <font color="blue">Ameen</font-color><font color="black"></font-color> Mart. All rights reserved.  Developed by Ameen Mohamed S</p></footer>
+
